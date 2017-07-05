@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+           
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:minHeight="?android:attr/actionBarSize"
+      android:background="?android:attr/colorPrimary"
+      android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+      android:popupTheme="@android:style/ThemeOverlay.Material.Light" />
+  
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+    <FrameLayout
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/fab"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="@string/newReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="35dp"
+            android:drawableLeft="@drawable/ic_add_circle_white_24dp"
+            android:padding="@dimen/abc_action_bar_content_inset_material" />
+    </FrameLayout>
+</FrameLayout>
