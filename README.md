@@ -1,6 +1,7 @@
-Creating a Splash Screen
-========================
+Creating Android Xamarin Mobile App for IPG-Project
+===================================================
 
-This sample demonstrates one technique for creating a splash screen in
-a Xamarin.Android application. It is the companion code for the Xamarin.Android
-guide [Creating a Splash Screen](https://developer.xamarin.com/guides/android/user_interface/creating_a_splash_screen/).
+This demonstrates multiple technique for creating a xamarin android App.
+It is the companion code for the IPG Project NET.Core web App
+guide [Creating FIX web APP in NET.Core (IPG Project)](https://github.com/daeynasvistas/IPG-projeto).
+
