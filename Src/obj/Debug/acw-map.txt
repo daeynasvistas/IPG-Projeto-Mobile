@@ -1,23 +1,23 @@
-com.xamarin.beta_3.LoginActivity, Beta_3;md50ca5b6ddd238534adbed8fc0927af193.LoginActivity
-com.xamarin.beta_3.LoginActivity, Beta_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ca5b6ddd238534adbed8fc0927af193.LoginActivity
-com.xamarin.beta_3.LoginActivity;md50ca5b6ddd238534adbed8fc0927af193.LoginActivity
-com.xamarin.beta_3.LoginActivity;md50ca5b6ddd238534adbed8fc0927af193.LoginActivity
-com.xamarin.beta_3.MainActivity, Beta_3;md50ca5b6ddd238534adbed8fc0927af193.MainActivity
-com.xamarin.beta_3.MainActivity, Beta_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ca5b6ddd238534adbed8fc0927af193.MainActivity
-com.xamarin.beta_3.MainActivity;md50ca5b6ddd238534adbed8fc0927af193.MainActivity
-com.xamarin.beta_3.MainActivity;md50ca5b6ddd238534adbed8fc0927af193.MainActivity
-com.xamarin.beta_3.MainApplication, Beta_3;md50ca5b6ddd238534adbed8fc0927af193.MainApplication
-com.xamarin.beta_3.MainApplication, Beta_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ca5b6ddd238534adbed8fc0927af193.MainApplication
-com.xamarin.beta_3.MainApplication;md50ca5b6ddd238534adbed8fc0927af193.MainApplication
-com.xamarin.beta_3.MainApplication;md50ca5b6ddd238534adbed8fc0927af193.MainApplication
-com.xamarin.beta_3.PhotoActivity, Beta_3;md50ca5b6ddd238534adbed8fc0927af193.PhotoActivity
-com.xamarin.beta_3.PhotoActivity, Beta_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ca5b6ddd238534adbed8fc0927af193.PhotoActivity
-com.xamarin.beta_3.PhotoActivity;md50ca5b6ddd238534adbed8fc0927af193.PhotoActivity
-com.xamarin.beta_3.PhotoActivity;md50ca5b6ddd238534adbed8fc0927af193.PhotoActivity
-com.xamarin.beta_3.SplashActivity, Beta_3;md50ca5b6ddd238534adbed8fc0927af193.SplashActivity
-com.xamarin.beta_3.SplashActivity, Beta_3, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50ca5b6ddd238534adbed8fc0927af193.SplashActivity
-com.xamarin.beta_3.SplashActivity;md50ca5b6ddd238534adbed8fc0927af193.SplashActivity
-com.xamarin.beta_3.SplashActivity;md50ca5b6ddd238534adbed8fc0927af193.SplashActivity
+com.xamarin.beta_3.MainApplication, ipgMobile;md50e9248164946e1467f73d491cdc24c9c.MainApplication
+com.xamarin.beta_3.MainApplication, ipgMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50e9248164946e1467f73d491cdc24c9c.MainApplication
+com.xamarin.beta_3.MainApplication;md50e9248164946e1467f73d491cdc24c9c.MainApplication
+com.xamarin.beta_3.MainApplication;md50e9248164946e1467f73d491cdc24c9c.MainApplication
+com.xamarin.ipgMobile.LoginActivity, ipgMobile;md5d78627df2744bc2093bcf3081e7c605f.LoginActivity
+com.xamarin.ipgMobile.LoginActivity, ipgMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d78627df2744bc2093bcf3081e7c605f.LoginActivity
+com.xamarin.ipgMobile.LoginActivity;md5d78627df2744bc2093bcf3081e7c605f.LoginActivity
+com.xamarin.ipgmobile.LoginActivity;md5d78627df2744bc2093bcf3081e7c605f.LoginActivity
+com.xamarin.ipgMobile.MainActivity, ipgMobile;md5d78627df2744bc2093bcf3081e7c605f.MainActivity
+com.xamarin.ipgMobile.MainActivity, ipgMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d78627df2744bc2093bcf3081e7c605f.MainActivity
+com.xamarin.ipgMobile.MainActivity;md5d78627df2744bc2093bcf3081e7c605f.MainActivity
+com.xamarin.ipgmobile.MainActivity;md5d78627df2744bc2093bcf3081e7c605f.MainActivity
+com.xamarin.ipgMobile.PhotoActivity, ipgMobile;md5d78627df2744bc2093bcf3081e7c605f.PhotoActivity
+com.xamarin.ipgMobile.PhotoActivity, ipgMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d78627df2744bc2093bcf3081e7c605f.PhotoActivity
+com.xamarin.ipgMobile.PhotoActivity;md5d78627df2744bc2093bcf3081e7c605f.PhotoActivity
+com.xamarin.ipgmobile.PhotoActivity;md5d78627df2744bc2093bcf3081e7c605f.PhotoActivity
+com.xamarin.ipgMobile.SplashActivity, ipgMobile;md5d78627df2744bc2093bcf3081e7c605f.SplashActivity
+com.xamarin.ipgMobile.SplashActivity, ipgMobile, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d78627df2744bc2093bcf3081e7c605f.SplashActivity
+com.xamarin.ipgMobile.SplashActivity;md5d78627df2744bc2093bcf3081e7c605f.SplashActivity
+com.xamarin.ipgmobile.SplashActivity;md5d78627df2744bc2093bcf3081e7c605f.SplashActivity
 Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
 Plugin.Geolocator.GeolocationContinuousListener, Plugin.Geolocator, Version=3.0.4.0, Culture=neutral, PublicKeyToken=null;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener
 Plugin.Geolocator.GeolocationContinuousListener;md57e7f66f929d23b17b7be88e2c5a0baea.GeolocationContinuousListener

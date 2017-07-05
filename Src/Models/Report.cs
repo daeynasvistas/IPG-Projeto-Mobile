@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace com.xamarin.beta_3.Models
+namespace com.xamarin.ipgMobile.Models  
 {
     class Report
     {

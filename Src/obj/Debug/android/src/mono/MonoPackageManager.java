@@ -97,8 +97,8 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "Beta_3.dll" comes first in this list. */
-		"Beta_3.dll",
+		/* We need to ensure that "ipgMobile.dll" comes first in this list. */
+		"ipgMobile.dll",
 		"FormsViewGroup.dll",
 		"Newtonsoft.Json.dll",
 		"Plugin.CurrentActivity.dll",

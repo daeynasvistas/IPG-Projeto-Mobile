@@ -9,14 +9,14 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using com.xamarin.beta_3.Models;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Plugin.SecureStorage;
+using com.xamarin.ipgMobile.Models;
 
-namespace com.xamarin.beta_3
+namespace com.xamarin.ipgMobile 
 {
-    [Activity(Label = "LoginActivity")]
+    [Activity(Label = "LoginActivity", WindowSoftInputMode = SoftInput.StateHidden)] // hide teclado quando não tenho focus
     public class LoginActivity : Activity
     {
 
@@ -40,13 +40,16 @@ namespace com.xamarin.beta_3
 
             button.Click += delegate
             {
+
                 // teste de Login e receber token
-                var result = LoginAsync(editTextEmail.Text.ToString(), editTextPassword.Text.ToString(), editTextUrl.Text.ToString());
-                //    if (result != null)
-                //    {
-                //        //error
-                //       // Toast.MakeText(this, "Login Fail", ToastLength.Long).Show();
-                //    }
+                var result = LoginAsync(editTextEmail.Text.ToString(), 
+                                        editTextPassword.Text.ToString(), 
+                                        editTextUrl.Text.ToString());
+                    //if (result != null)
+                    //{
+                    //    //error
+                    //    Toast.MakeText(this, "Login Fail", ToastLength.Long).Show();
+                    //}
             };
 
 
@@ -70,8 +73,12 @@ namespace com.xamarin.beta_3
                 CrossSecureStorage.Current.SetValue("Password", password);
                 CrossSecureStorage.Current.SetValue("Url", url);
 
-                Toast.MakeText(this, "@string/LoginOK", ToastLength.Long).Show();
+                Toast.MakeText(this, GetString(Resource.String.LoginOk), ToastLength.Long).Show();
                 StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+            }
+            else
+            {
+                Toast.MakeText(this, GetString(Resource.String.LoginFail), ToastLength.Long).Show();
             }
             return result.StatusCode.ToString();
         }

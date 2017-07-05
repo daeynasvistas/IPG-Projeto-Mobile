@@ -10,12 +10,12 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <application android:label="@string/ApplicationName" android:theme="@style/MyTheme.Base" android:name="md50ca5b6ddd238534adbed8fc0927af193.MainApplication" android:allowBackup="true" android:debuggable="true">
+  <application android:label="@string/ApplicationName" android:theme="@style/MyTheme.Base" android:name="md50e9248164946e1467f73d491cdc24c9c.MainApplication" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCTk6j4X4RiMBJJBxln1QCSWp3jR8lyGIs" />
-    <activity android:label="LoginActivity" android:name="md50ca5b6ddd238534adbed8fc0927af193.LoginActivity" />
-    <activity android:label="IPG - Projeto" android:name="md50ca5b6ddd238534adbed8fc0927af193.MainActivity" />
-    <activity android:label="PhotoActivity" android:name="md50ca5b6ddd238534adbed8fc0927af193.PhotoActivity" />
-    <activity android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md50ca5b6ddd238534adbed8fc0927af193.SplashActivity">
+    <activity android:label="LoginActivity" android:windowSoftInputMode="stateHidden|adjustUnspecified" android:name="md5d78627df2744bc2093bcf3081e7c605f.LoginActivity" />
+    <activity android:label="IPG - Projeto" android:name="md5d78627df2744bc2093bcf3081e7c605f.MainActivity" />
+    <activity android:label="PhotoActivity" android:name="md5d78627df2744bc2093bcf3081e7c605f.PhotoActivity" />
+    <activity android:noHistory="true" android:theme="@style/MyTheme.Splash" android:name="md5d78627df2744bc2093bcf3081e7c605f.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

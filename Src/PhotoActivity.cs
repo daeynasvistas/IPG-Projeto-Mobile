@@ -12,7 +12,7 @@ using Android.Widget;
 using Android.Graphics;
 using System.IO;
 
-namespace com.xamarin.beta_3
+namespace com.xamarin.ipgMobile 
 {
     [Activity(Label = "PhotoActivity")]
     public class PhotoActivity : Activity

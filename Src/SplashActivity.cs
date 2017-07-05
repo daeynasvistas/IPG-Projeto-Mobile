@@ -6,15 +6,15 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Util;
 using Plugin.SecureStorage;
-using com.xamarin.beta_3.Models;
 using System.Text;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Android.Widget;
 using Android.Locations;
 using Android.Runtime;
+using com.xamarin.ipgMobile.Models;
 
-namespace com.xamarin.beta_3
+namespace com.xamarin.ipgMobile 
 {
     [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity/*, ILocationListener*/

@@ -14,7 +14,7 @@ using Android.Gms.Maps.Model;
 using Android.Support.Design.Widget;
 using Xamarin.Forms.Platform.Android;
 
-namespace com.xamarin.beta_3
+namespace com.xamarin.ipgMobile
 {
     [Activity(Label = "IPG - Projeto")]
     public class MainActivity : AppCompatActivity, ILocationListener, IOnMapReadyCallback
