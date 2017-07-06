@@ -19,7 +19,6 @@ namespace com.xamarin.ipgMobile
     [Activity(Theme = "@style/MyTheme.Splash", MainLauncher = true, NoHistory = true)]
     public class SplashActivity : AppCompatActivity/*, ILocationListener*/
     {
-        //LocationManager locMgr;
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
 
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
@@ -32,32 +31,9 @@ namespace com.xamarin.ipgMobile
         protected override void OnResume()
         {
             base.OnResume();
-
-            //// initialize location manager
-            //locMgr = GetSystemService(Context.LocationService) as LocationManager;
-
-            //var locationCriteria = new Criteria();
-            //    locationCriteria.Accuracy = Accuracy.Coarse;
-            //    locationCriteria.PowerRequirement = Power.Medium;
-
-            //string locationProvider = locMgr.GetBestProvider(locationCriteria, true);
-
-            //Log.Debug(TAG, "Starting location updates with " + locationProvider.ToString());
-            //locMgr.RequestLocationUpdates(locationProvider, 2000, 1, this);
-
-
             Task startupWork = new Task(() => { LoginStartup();/* PositionStartup();*/ });
             startupWork.Start();
         }
-
-        // se pretender obter position em backgroud COMENTAR onPause()
-        //protected override void OnPause()
-        //{
-        //    base.OnPause();
-        //    // RemoveUpdates takes a pending intent - here, we pass the current Activity
-        //    locMgr.RemoveUpdates(this);
-        //    Log.Debug(TAG, "Location updates paused because application is entering the background");
-        //}
 
 
         void PositionStartup()
@@ -105,33 +81,5 @@ namespace com.xamarin.ipgMobile
 
         // Prevent the back button from canceling the startup process
         public override void OnBackPressed() { }
-
-
-        //// back Location interface
-        //public void OnLocationChanged(Location location)
-        //{
-        //    //CrossSecureStorage.Current.SetValue("Latitude", location.Latitude.ToString());
-        //    //CrossSecureStorage.Current.SetValue("Longitude", location.Longitude.ToString());
-        //    //CrossSecureStorage.Current.SetValue("Provider", location.Provider.ToString());
-        //    //Log.Debug(TAG, "Location changed SPLASH");
-        //    //Log.Debug(TAG, "Latitude: " + location.Latitude.ToString());
-        //    //Log.Debug(TAG, "Longitude: " + location.Longitude.ToString());
-
-        //}
-
-        //public void OnProviderDisabled(string provider)
-        //{
-        //    Log.Debug(TAG, provider + " disaled by user");
-        //}
-
-        //public void OnProviderEnabled(string provider)
-        //{
-        //    Log.Debug(TAG, provider + " enabled by user");
-        //}
-
-        //public void OnStatusChanged(string provider, [GeneratedEnum] Availability status, Bundle extras)
-        //{
-        //    Log.Debug(TAG, provider + " availability has changed to " + status.ToString());
-        //}
     }
 }

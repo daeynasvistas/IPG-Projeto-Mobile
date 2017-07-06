@@ -8,5 +8,7 @@
         android:src="@drawable/splash_logo"
         android:tileMode="disabled"
         android:gravity="center"/>
+  
   </item>
+
 </layer-list>

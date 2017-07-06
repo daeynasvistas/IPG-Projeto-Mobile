@@ -19,7 +19,7 @@ namespace com.xamarin.ipgMobile
     [Activity(Label = "LoginActivity", WindowSoftInputMode = SoftInput.StateHidden)] // hide teclado quando não tenho focus
     public class LoginActivity : Activity
     {
-
+        ProgressBar spinner; // spinner stuff para location
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -29,6 +29,9 @@ namespace com.xamarin.ipgMobile
             EditText editTextEmail = FindViewById<EditText>(Resource.Id.editTextEmail);
             EditText editTextPassword = FindViewById<EditText>(Resource.Id.editTextPassword);
             EditText editTextUrl = FindViewById<EditText>(Resource.Id.editTextUrl);
+
+            spinner = FindViewById<ProgressBar>(Resource.Id.progressBar1);  
+
             // old value if exist
             editTextEmail.Text = Intent.GetStringExtra("userEmail") ?? "";
             editTextPassword.Text = Intent.GetStringExtra("userPassword") ?? "";
@@ -37,19 +40,15 @@ namespace com.xamarin.ipgMobile
             // debug:
             editTextUrl.Text = "http://projetoipg.azurewebsites.net";
             // Create your application here
+            spinner.Visibility = ViewStates.Gone;
 
             button.Click += delegate
             {
-
+                spinner.Visibility = ViewStates.Visible;
                 // teste de Login e receber token
                 var result = LoginAsync(editTextEmail.Text.ToString(), 
                                         editTextPassword.Text.ToString(), 
                                         editTextUrl.Text.ToString());
-                    //if (result != null)
-                    //{
-                    //    //error
-                    //    Toast.MakeText(this, "Login Fail", ToastLength.Long).Show();
-                    //}
             };
 
 
@@ -79,6 +78,7 @@ namespace com.xamarin.ipgMobile
             else
             {
                 Toast.MakeText(this, GetString(Resource.String.LoginFail), ToastLength.Long).Show();
+                spinner.Visibility = ViewStates.Gone;
             }
             return result.StatusCode.ToString();
         }
