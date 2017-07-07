@@ -3680,6 +3680,7 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f0c0036;
         public static final int abc_shareactionprovider_share_with_application=0x7f0c0037;
         public static final int abc_toolbar_collapse_description=0x7f0c0038;
+        public static final int alterPhoto=0x7f0c0057;
         public static final int appbar_scrolling_view_behavior=0x7f0c0047;
         public static final int bottom_sheet_behavior=0x7f0c0048;
         public static final int butPhoto=0x7f0c0054;
@@ -3722,6 +3723,7 @@ containing a value of this type.
         public static final int mr_controller_volume_slider=0x7f0c0022;
         public static final int mr_system_route_name=0x7f0c0023;
         public static final int mr_user_route_category_name=0x7f0c0024;
+        public static final int newPhoto=0x7f0c0056;
         public static final int newReport=0x7f0c0055;
         public static final int password_toggle_content_description=0x7f0c004a;
         public static final int path_password_eye=0x7f0c004b;

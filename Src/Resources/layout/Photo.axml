@@ -25,11 +25,12 @@
                     android:id="@+id/imageViewPhoto"
                     android:scaleType="centerCrop" />
                 <Button
-                    android:text="Take Picture"
+                    android:text="@string/newPhoto"
                     android:layout_gravity="bottom"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/buttonCamera"
+                    android:drawableLeft="@drawable/ic_add_a_photo_black_24dp"
                     android:layout_margin="5dp" />
             </FrameLayout>
         </android.support.v7.widget.CardView>
