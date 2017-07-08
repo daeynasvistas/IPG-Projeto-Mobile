@@ -4087,6 +4087,9 @@ namespace com.xamarin.ipgMobile
 			// aapt resource value: 0x7f0c0038
 			public const int abc_toolbar_collapse_description = 2131492920;
 			
+			// aapt resource value: 0x7f0c0057
+			public const int alterPhoto = 2131492951;
+			
 			// aapt resource value: 0x7f0c0047
 			public const int appbar_scrolling_view_behavior = 2131492935;
 			
@@ -4212,6 +4215,9 @@ namespace com.xamarin.ipgMobile
 			
 			// aapt resource value: 0x7f0c0024
 			public const int mr_user_route_category_name = 2131492900;
+			
+			// aapt resource value: 0x7f0c0056
+			public const int newPhoto = 2131492950;
 			
 			// aapt resource value: 0x7f0c0055
 			public const int newReport = 2131492949;

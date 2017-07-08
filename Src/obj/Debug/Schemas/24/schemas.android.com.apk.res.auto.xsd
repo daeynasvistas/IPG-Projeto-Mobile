@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v24</xs:documentation>
-    <xs:documentation>06/07/2017 13:03:25</xs:documentation>
+    <xs:documentation>07/07/2017 18:43:54</xs:documentation>
   </xs:annotation>
   <xs:attribute name="allowStacking">
     <xs:annotation>
@@ -2276,6 +2276,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -2323,6 +2324,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -8018,6 +8020,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -8065,6 +8068,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -13862,6 +13866,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -13909,6 +13914,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -17260,6 +17266,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -17307,6 +17314,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -17915,6 +17923,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -17962,6 +17971,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -19001,6 +19011,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -19048,6 +19059,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -19656,6 +19668,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -19703,6 +19716,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -21839,6 +21853,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -21886,6 +21901,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -22518,6 +22534,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -22565,6 +22582,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />
@@ -25602,6 +25620,7 @@
             <xs:enumeration value="@string/abc_shareactionprovider_share_with" />
             <xs:enumeration value="@string/abc_shareactionprovider_share_with_application" />
             <xs:enumeration value="@string/abc_toolbar_collapse_description" />
+            <xs:enumeration value="@string/alterPhoto" />
             <xs:enumeration value="@string/appbar_scrolling_view_behavior" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/bottom_sheet_behavior" />
@@ -25649,6 +25668,7 @@
             <xs:enumeration value="@string/mr_controller_volume_slider" />
             <xs:enumeration value="@string/mr_system_route_name" />
             <xs:enumeration value="@string/mr_user_route_category_name" />
+            <xs:enumeration value="@string/newPhoto" />
             <xs:enumeration value="@string/newReport" />
             <xs:enumeration value="@string/password_toggle_content_description" />
             <xs:enumeration value="@string/path_password_eye" />

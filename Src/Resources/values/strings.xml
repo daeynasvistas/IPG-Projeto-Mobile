@@ -7,5 +7,8 @@
     <string name="GetPosition">Get position from</string>
     <string name="butPhoto">New Photo</string>
     <string name="newReport"> New Report</string>
+    <string name="newPhoto"> Take Photo</string>
+    <string name="alterPhoto"> Replace Photo</string>
   
+
 </resources>
