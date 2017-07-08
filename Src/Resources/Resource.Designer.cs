@@ -3329,8 +3329,8 @@ namespace com.xamarin.ipgMobile
 			// aapt resource value: 0x7f0d0090
 			public const int map = 2131558544;
 			
-			// aapt resource value: 0x7f0d00c8
-			public const int masked = 2131558600;
+			// aapt resource value: 0x7f0d00c9
+			public const int masked = 2131558601;
 			
 			// aapt resource value: 0x7f0d00b2
 			public const int media_actions = 2131558578;
@@ -3551,6 +3551,9 @@ namespace com.xamarin.ipgMobile
 			// aapt resource value: 0x7f0d0056
 			public const int spacer = 2131558486;
 			
+			// aapt resource value: 0x7f0d00c7
+			public const int spinner = 2131558599;
+			
 			// aapt resource value: 0x7f0d0008
 			public const int split_action_bar = 2131558408;
 			
@@ -3644,8 +3647,8 @@ namespace com.xamarin.ipgMobile
 			// aapt resource value: 0x7f0d000e
 			public const int view_offset_helper = 2131558414;
 			
-			// aapt resource value: 0x7f0d00c7
-			public const int visible = 2131558599;
+			// aapt resource value: 0x7f0d00c8
+			public const int visible = 2131558600;
 			
 			// aapt resource value: 0x7f0d00a4
 			public const int volume_item_container = 2131558564;
@@ -3948,7 +3951,13 @@ namespace com.xamarin.ipgMobile
 			public const int select_dialog_singlechoice_material = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int support_simple_spinner_dropdown_item = 2130968644;
+			public const int Spinner_item = 2130968644;
+			
+			// aapt resource value: 0x7f040045
+			public const int Spinner_layout = 2130968645;
+			
+			// aapt resource value: 0x7f040046
+			public const int support_simple_spinner_dropdown_item = 2130968646;
 			
 			static Layout()
 			{
@@ -4098,6 +4107,9 @@ namespace com.xamarin.ipgMobile
 			
 			// aapt resource value: 0x7f0c0054
 			public const int butPhoto = 2131492948;
+			
+			// aapt resource value: 0x7f0c0058
+			public const int category = 2131492952;
 			
 			// aapt resource value: 0x7f0c0049
 			public const int character_counter_pattern = 2131492937;

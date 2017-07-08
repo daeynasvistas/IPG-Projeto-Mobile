@@ -3377,6 +3377,7 @@ containing a value of this type.
         public static int auto=0x7f0d0019;
         public static int beginning=0x7f0d002b;
         public static int bottom=0x7f0d0033;
+        public static int buttonCamera=0x7f0d00c4;
         public static int buttonLogin=0x7f0d008d;
         public static int buttonPanel=0x7f0d0055;
         public static int cancel_action=0x7f0d00b0;
@@ -3403,6 +3404,8 @@ containing a value of this type.
         public static int editTextEmail=0x7f0d008a;
         public static int editTextPassword=0x7f0d008b;
         public static int editTextUrl=0x7f0d008c;
+        public static int editTextreportDescription=0x7f0d00c6;
+        public static int editTextreportTitle=0x7f0d00c5;
         public static int edit_query=0x7f0d0070;
         public static int end=0x7f0d002c;
         public static int end_padder=0x7f0d00c2;
@@ -3436,7 +3439,7 @@ containing a value of this type.
         public static int listMode=0x7f0d001c;
         public static int list_item=0x7f0d0052;
         public static int map=0x7f0d0090;
-        public static int masked=0x7f0d00c6;
+        public static int masked=0x7f0d00c9;
         public static int media_actions=0x7f0d00b2;
         public static int middle=0x7f0d002d;
         public static int mini=0x7f0d0048;
@@ -3510,6 +3513,7 @@ containing a value of this type.
         public static int snackbar_text=0x7f0d0081;
         public static int snap=0x7f0d0039;
         public static int spacer=0x7f0d0056;
+        public static int spinner=0x7f0d00c7;
         public static int split_action_bar=0x7f0d0008;
         public static int src_atop=0x7f0d0027;
         public static int src_in=0x7f0d0028;
@@ -3525,7 +3529,6 @@ containing a value of this type.
         public static int text2=0x7f0d00bf;
         public static int textSpacerNoButtons=0x7f0d005c;
         public static int textSpacerNoTitle=0x7f0d005b;
-        public static int textView=0x7f0d00c4;
         public static int text_input_password_toggle=0x7f0d0088;
         public static int textinput_counter=0x7f0d000c;
         public static int textinput_error=0x7f0d000d;
@@ -3542,7 +3545,7 @@ containing a value of this type.
         public static int up=0x7f0d0009;
         public static int useLogo=0x7f0d0023;
         public static int view_offset_helper=0x7f0d000e;
-        public static int visible=0x7f0d00c5;
+        public static int visible=0x7f0d00c8;
         public static int volume_item_container=0x7f0d00a4;
         public static int wide=0x7f0d0018;
         public static int withText=0x7f0d0032;
@@ -3678,9 +3681,11 @@ containing a value of this type.
         public static int abc_shareactionprovider_share_with=0x7f0c0036;
         public static int abc_shareactionprovider_share_with_application=0x7f0c0037;
         public static int abc_toolbar_collapse_description=0x7f0c0038;
+        public static int alterPhoto=0x7f0c0057;
         public static int appbar_scrolling_view_behavior=0x7f0c0047;
         public static int bottom_sheet_behavior=0x7f0c0048;
         public static int butPhoto=0x7f0c0054;
+        public static int category=0x7f0c0058;
         public static int character_counter_pattern=0x7f0c0049;
         public static int common_google_play_services_enable_button=0x7f0c0001;
         public static int common_google_play_services_enable_text=0x7f0c0002;
@@ -3720,6 +3725,7 @@ containing a value of this type.
         public static int mr_controller_volume_slider=0x7f0c0022;
         public static int mr_system_route_name=0x7f0c0023;
         public static int mr_user_route_category_name=0x7f0c0024;
+        public static int newPhoto=0x7f0c0056;
         public static int newReport=0x7f0c0055;
         public static int password_toggle_content_description=0x7f0c004a;
         public static int path_password_eye=0x7f0c004b;

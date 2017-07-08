@@ -3439,7 +3439,7 @@ containing a value of this type.
         public static final int listMode=0x7f0d001c;
         public static final int list_item=0x7f0d0052;
         public static final int map=0x7f0d0090;
-        public static final int masked=0x7f0d00c8;
+        public static final int masked=0x7f0d00c9;
         public static final int media_actions=0x7f0d00b2;
         public static final int middle=0x7f0d002d;
         public static final int mini=0x7f0d0048;
@@ -3513,6 +3513,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0d0081;
         public static final int snap=0x7f0d0039;
         public static final int spacer=0x7f0d0056;
+        public static final int spinner=0x7f0d00c7;
         public static final int split_action_bar=0x7f0d0008;
         public static final int src_atop=0x7f0d0027;
         public static final int src_in=0x7f0d0028;
@@ -3544,7 +3545,7 @@ containing a value of this type.
         public static final int up=0x7f0d0009;
         public static final int useLogo=0x7f0d0023;
         public static final int view_offset_helper=0x7f0d000e;
-        public static final int visible=0x7f0d00c7;
+        public static final int visible=0x7f0d00c8;
         public static final int volume_item_container=0x7f0d00a4;
         public static final int wide=0x7f0d0018;
         public static final int withText=0x7f0d0032;
@@ -3638,7 +3639,9 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040041;
         public static final int select_dialog_multichoice_material=0x7f040042;
         public static final int select_dialog_singlechoice_material=0x7f040043;
-        public static final int support_simple_spinner_dropdown_item=0x7f040044;
+        public static final int spinner_item=0x7f040044;
+        public static final int spinner_layout=0x7f040045;
+        public static final int support_simple_spinner_dropdown_item=0x7f040046;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -3684,6 +3687,7 @@ containing a value of this type.
         public static final int appbar_scrolling_view_behavior=0x7f0c0047;
         public static final int bottom_sheet_behavior=0x7f0c0048;
         public static final int butPhoto=0x7f0c0054;
+        public static final int category=0x7f0c0058;
         public static final int character_counter_pattern=0x7f0c0049;
         public static final int common_google_play_services_enable_button=0x7f0c0001;
         public static final int common_google_play_services_enable_text=0x7f0c0002;

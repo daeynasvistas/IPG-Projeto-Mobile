@@ -9,6 +9,8 @@
     <string name="newReport"> New Report</string>
     <string name="newPhoto"> Take Photo</string>
     <string name="alterPhoto"> Replace Photo</string>
+    <string name="category"> Category</string>
   
+
 
 </resources>

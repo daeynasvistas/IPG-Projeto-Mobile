@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Widget;
 using Android.Graphics;
 using System.IO;
+using System.Collections;
 
 namespace com.xamarin.ipgMobile 
 {
@@ -35,9 +36,28 @@ namespace com.xamarin.ipgMobile
             imageView = FindViewById<ImageView>(Resource.Id.imageViewPhoto);
 
             if (bitmap != null) { imageView.SetImageBitmap(bitmap); } // guardar state -.. talvez melhor método
+
+            string temp = "";
+            ArrayList items = new ArrayList();
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
+
+            //for (int i = 0; i < json.Count; i++)
+            //    {
+            //        temp = json[i]["category"].ToString();
+            //        items.Add(temp);
+            //    }
+            //debug----
+            items.Add("value1");
+            items.Add("value2");
+            items.Add("value3");
+            items.Add("value4");
+            //debug----
+            ArrayAdapter adapter = new ArrayAdapter(this, Resource.Layout.Spinner_layout /*Android.Resource.Layout.SimpleSpinnerItem*/, items);
+            adapter.SetDropDownViewResource(Resource.Layout.Spinner_item);
+            spinner.Adapter = adapter;
         }
 
- 
+
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
         {
