@@ -14,8 +14,10 @@ using Android.Gms.Maps.Model;
 using Android.Support.Design.Widget;
 using Xamarin.Forms.Platform.Android;
 
+
 namespace com.xamarin.ipgMobile
 {
+
     [Activity(Label = "IPG - Projeto")]
     public class MainActivity : AppCompatActivity, ILocationListener, IOnMapReadyCallback
     {
@@ -37,8 +39,6 @@ namespace com.xamarin.ipgMobile
 
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-            // receber categories
-            var spinnerCat = Intent.GetStringExtra("spinnerCat") ?? "Data not available";
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             //Toolbar will now take on default Action Bar characteristics
@@ -85,10 +85,8 @@ namespace com.xamarin.ipgMobile
                 var location = locMgr.GetLastKnownLocation(locationProvider);
 
                 var photoActivity = new Intent(this, typeof(PhotoActivity));
-                photoActivity.PutExtra("MyLatitude", location.Latitude.ToString());
-                photoActivity.PutExtra("MyLongitude", location.Longitude.ToString());
-                photoActivity.PutExtra("SpinnerCat", spinnerCat);
-                
+                photoActivity.PutExtra("MyLatitude", location.Latitude);
+                photoActivity.PutExtra("MyLongitude", location.Longitude);
 
                 StartActivity(photoActivity);
 
@@ -151,27 +149,34 @@ namespace com.xamarin.ipgMobile
 
         private void UpdateLocation(Location location)
         {
+            try
+            {
             _map.Clear(); // remover os anterior ... encontrar melhor método!!
-            LatLng latlng = new LatLng(location.Latitude, location.Longitude);
-            CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(latlng, 18);
-            _map.MoveCamera(camera);
+                        LatLng latlng = new LatLng(location.Latitude, location.Longitude);
+                        CameraUpdate camera = CameraUpdateFactory.NewLatLngZoom(latlng, 18);
+                        _map.MoveCamera(camera);
 
-            MarkerOptions options = new MarkerOptions()
-                .SetPosition(latlng)
-                .SetTitle("Estamos Aqui!")
-                .SetSnippet("mova-se até ao local pretendido.")
-                .Draggable(true); // mover manualmente, talvez colocar false
+                        MarkerOptions options = new MarkerOptions()
+                            .SetPosition(latlng)
+                            .SetTitle("Estamos Aqui!")
+                            .SetSnippet("mova-se até ao local pretendido.")
+                            .Draggable(true); // mover manualmente, talvez colocar false
 
-            _map.AddMarker(options);
+                        _map.AddMarker(options);
 
-            Marker marker = _map.AddMarker(new MarkerOptions()
-                                            .SetPosition(latlng)
-                                            .SetTitle("Estamos Aqui!")
-                                            .SetSnippet("mova-se até ao local pretendido.")
-                                            .Draggable(true)); // mover manualmente, talvez colocar false
-
+                        Marker marker = _map.AddMarker(new MarkerOptions()
+                                                        .SetPosition(latlng)
+                                                        .SetTitle("Estamos Aqui!")
+                                                        .SetSnippet("mova-se até ao local pretendido.")
+                                                        .Draggable(true)); // mover manualmente, talvez colocar false 
             marker.ShowInfoWindow(); // abrir info allways
-        }
+            }
+            catch (Exception)
+            {
+                // fazer nada .. só para evitar crash application
+            }
+          
+       }
 
         public void OnProviderDisabled(string provider)
         {

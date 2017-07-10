@@ -22,7 +22,6 @@ namespace com.xamarin.ipgMobile
     public class SplashActivity : AppCompatActivity/*, ILocationListener*/
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;
-
         public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
         {
             base.OnCreate(savedInstanceState, persistentState);
@@ -68,17 +67,14 @@ namespace com.xamarin.ipgMobile
                     var uri = new Uri(CrossSecureStorage.Current.GetValue("Url") +  "/api/categories");
                     HttpClient myClient = new HttpClient();
 
-                    var MainActivity = new Intent(Application.Context, typeof(MainActivity));
-
                     var response = await myClient.GetAsync(uri);
                         if (response.IsSuccessStatusCode)
                         {
                             var content_cat = await response.Content.ReadAsStringAsync();
-                            MainActivity.PutExtra("spinnerCat", content_cat);
-                        //  var Items = JsonConvert.DeserializeObject<List<RootObject>>(content_cat);
-                    }
+                            CrossSecureStorage.Current.SetValue("SpinnerCategory", content_cat);
+                        }
 
-                    StartActivity(MainActivity);
+                    StartActivity(new Intent(Application.Context, typeof(MainActivity)));
                 }
                 else // password inválido
                 {

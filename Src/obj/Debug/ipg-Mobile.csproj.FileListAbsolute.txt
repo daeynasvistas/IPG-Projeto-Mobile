@@ -475,3 +475,4 @@ C:\Mobile\Beta4\IPG-Projeto-Mobile\Src\obj\Debug\android\assets\Refractored.Floa
 C:\Mobile\Beta4\IPG-Projeto-Mobile\Src\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Mobile\Beta4\IPG-Projeto-Mobile\Src\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Mobile\Beta4\IPG-Projeto-Mobile\Src\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Mobile\Beta4\IPG-Projeto-Mobile\Src\obj\Debug\ipg-Mobile.csprojResolveAssemblyReference.cache
