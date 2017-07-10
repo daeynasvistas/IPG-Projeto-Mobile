@@ -37,6 +37,8 @@ namespace com.xamarin.ipgMobile
 
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
+            // receber categories
+            var spinnerCat = Intent.GetStringExtra("spinnerCat") ?? "Data not available";
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             //Toolbar will now take on default Action Bar characteristics
@@ -85,6 +87,8 @@ namespace com.xamarin.ipgMobile
                 var photoActivity = new Intent(this, typeof(PhotoActivity));
                 photoActivity.PutExtra("MyLatitude", location.Latitude.ToString());
                 photoActivity.PutExtra("MyLongitude", location.Longitude.ToString());
+                photoActivity.PutExtra("SpinnerCat", spinnerCat);
+                
 
                 StartActivity(photoActivity);
 

@@ -9,10 +9,12 @@ using Plugin.SecureStorage;
 using System.Text;
 using System.Net.Http;
 using Newtonsoft.Json;
+using System.Collections.Generic;
 using Android.Widget;
 using Android.Locations;
 using Android.Runtime;
 using com.xamarin.ipgMobile.Models;
+using System.Collections;
 
 namespace com.xamarin.ipgMobile 
 {
@@ -61,7 +63,22 @@ namespace com.xamarin.ipgMobile
                 if (result.IsSuccessStatusCode) // Já existe utilizador válido
                 {
                     //var token = await result.Content.ReadAsStringAsync();
-                    StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+
+                    // receber as settings da aplicação (categorias)
+                    var uri = new Uri(CrossSecureStorage.Current.GetValue("Url") +  "/api/categories");
+                    HttpClient myClient = new HttpClient();
+
+                    var MainActivity = new Intent(Application.Context, typeof(MainActivity));
+
+                    var response = await myClient.GetAsync(uri);
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var content_cat = await response.Content.ReadAsStringAsync();
+                            MainActivity.PutExtra("spinnerCat", content_cat);
+                        //  var Items = JsonConvert.DeserializeObject<List<RootObject>>(content_cat);
+                    }
+
+                    StartActivity(MainActivity);
                 }
                 else // password inválido
                 {

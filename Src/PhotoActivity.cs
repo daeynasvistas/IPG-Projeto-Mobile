@@ -7,6 +7,8 @@ using Android.Widget;
 using Android.Graphics;
 using System.IO;
 using System.Collections;
+using com.xamarin.ipgMobile.Models;
+using Newtonsoft.Json;
 
 namespace com.xamarin.ipgMobile 
 {
@@ -28,8 +30,10 @@ namespace com.xamarin.ipgMobile
             // Receber todas as cenas da posição GPS
             string latitude = Intent.GetStringExtra("MyLatitude") ?? "Data not available";
             string longitude = Intent.GetStringExtra("MyLongitude") ?? "Data not available";
+            // receber categories
+            var spinnerCat = Intent.GetStringExtra("SpinnerCat") ?? "Data not available";
 
-                buttonCamera = FindViewById<Button>(Resource.Id.buttonCamera);
+            buttonCamera = FindViewById<Button>(Resource.Id.buttonCamera);
             // // clique na camera
             buttonCamera.Click += buttonCameraClick;
             //var buttonEnviar = FindViewById<Button>(Resource.Id.buttonEnviar);
@@ -37,21 +41,18 @@ namespace com.xamarin.ipgMobile
 
             if (bitmap != null) { imageView.SetImageBitmap(bitmap); } // guardar state -.. talvez melhor método
 
-            string temp = "";
-            ArrayList items = new ArrayList();
-            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
 
-            //for (int i = 0; i < json.Count; i++)
-            //    {
-            //        temp = json[i]["category"].ToString();
-            //        items.Add(temp);
-            //    }
-            //debug----
-            items.Add("value1");
-            items.Add("value2");
-            items.Add("value3");
-            items.Add("value4");
-            //debug----
+            ArrayList items = new ArrayList();  // categoria nome
+            ArrayList items_id = new ArrayList(); // id (para guardar ID, spinner não tem ID????) ver melhor
+
+            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
+            Newtonsoft.Json.Linq.JArray json = Newtonsoft.Json.Linq.JArray.Parse(spinnerCat);
+                foreach (var dataItem in json)
+                {
+                    items.Add(dataItem["name"]);
+                    items_id.Add(dataItem["categoryId"]);
+                }
+
             ArrayAdapter adapter = new ArrayAdapter(this, Resource.Layout.Spinner_layout /*Android.Resource.Layout.SimpleSpinnerItem*/, items);
             adapter.SetDropDownViewResource(Resource.Layout.Spinner_item);
             spinner.Adapter = adapter;

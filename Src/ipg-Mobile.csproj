@@ -162,6 +162,7 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Report.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="PhotoActivity.cs" />
