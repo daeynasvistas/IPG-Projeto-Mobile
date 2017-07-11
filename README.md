@@ -8,6 +8,7 @@ guide [Creating FIX web APP in NET.Core (IPG Project)](https://github.com/daeyna
 ![Mokup Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Mockup_beta1.png)
 
 ![Screen Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Screenshot_20170710-201645.png)
+![Screen Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Screenshot_20170710-201645.png)
 ![Screen Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Screenshot_20170710-201649.png)
 ![Screen Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Screenshot_20170710-201654.png)
 ![Screen Beta_1](https://github.com/daeynasvistas/IPG-Projeto-Mobile/blob/master/Src/Assets/Screenshot_20170710-201659.png)
